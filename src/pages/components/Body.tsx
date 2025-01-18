@@ -37,13 +37,17 @@ export default function FullHeightGrid() {
         <Paper
           sx={{
             width: "100%",
-            height: { xs: "50vh", sm: "100vh" },
+            maxHeight: {
+              xs: showMore ? "70vh" : "50vh", // Smooth height transition
+              sm: "100vh",
+            },
+            transition: "max-height 0.4s ease", // Smooth height effect
             backgroundColor: "#002855",
             color: "#fff",
             borderRadius: 2,
             padding: 4,
             boxShadow: 3,
-            overflow: "hidden", // Ensures smooth height transitions
+            overflow: "hidden", // Prevent content overflow
           }}
         >
           <Typography variant="h4" sx={{ marginBottom: 2, fontWeight: "bold" }}>
@@ -64,8 +68,8 @@ export default function FullHeightGrid() {
 
           <div
             style={{
-              transition: "all 0.4s ease", // Smooth transition
-              maxHeight: showMore ? "100px" : "0", // Animate height
+              maxHeight: showMore ? "150px" : "0", // Adjust maxHeight dynamically
+              transition: "max-height 0.4s ease, opacity 0.4s ease", // Smooth transition
               opacity: showMore ? 1 : 0, // Fade effect
               overflow: "hidden", // Prevent content overflow
             }}
@@ -77,12 +81,15 @@ export default function FullHeightGrid() {
                 lineHeight: 1.5,
                 fontStyle: "italic",
                 color: "#ddd",
+                marginBottom: 4,
               }}
             >
               Our mission is to empower businesses to succeed with scalable and
               innovative solutions tailored to their unique needs. From
               personalized digital experiences to robust cloud integrations, we
-              deliver excellence every step of the way.
+              deliver excellence every step of the way. We ensure that our
+              services align with your business goals and help you reach new
+              heights in efficiency and productivity.
             </Typography>
           </div>
 
@@ -116,13 +123,17 @@ export default function FullHeightGrid() {
         <Paper
           sx={{
             width: "100%",
-            height: { xs: "50vh", sm: "96vh" },
+            height: {
+              xs: "50vh",
+              sm: "96vh",
+            },
             backgroundColor: "#f5f5f5",
             marginTop: { xs: 0, sm: 2 },
             marginBottom: { xs: 0, sm: 2 },
             borderRadius: 2,
             padding: 4,
             boxShadow: 3,
+            overflowY: "auto", // Enable scrolling for extra content
           }}
         >
           <Typography

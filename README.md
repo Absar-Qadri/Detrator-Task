@@ -1,40 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Responsive Grid Layout with Material-UI and Next.js
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project demonstrates a responsive grid layout using Material-UI and Next.js. The layout adapts to different screen sizes, showcasing two grids side by side on larger screens and a single grid on smaller screens. The design incorporates a modern and clean aesthetic with a subtle and warm color palette.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Responsive Design**: The layout adjusts seamlessly between large and small screens, ensuring an optimal user experience on all devices.
+- **Material-UI Components**: Utilizes Material-UI's powerful grid system and components for a consistent and customizable layout.
+- **Customizable Margins**: The grid layout includes adjustable margins, with a larger margin on the right side to create a visually pleasing balance.
+- **Themed Color Palette**: Implements a warm and subtle color scheme for the navbar and grids, providing a cozy and inviting look.
+- **Next.js**: Utilizes the Next.js framework for server-side rendering and optimized performance.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **React**: A JavaScript library for building user interfaces.
+- **Material-UI**: A popular React UI framework for creating responsive and visually appealing designs.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Absar-Qadri/responsive-grid-layout.git
+   ```
